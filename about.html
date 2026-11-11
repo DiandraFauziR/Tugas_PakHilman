@@ -4,39 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | PORTAL RESMI OSIS</title>
+    <style>
+        :root {
+            --bg-color: #F8FAFC;
+            --text-color: #172B3A;
+            --primary: #0B3554;
+            --secondary: #176B9A;
+            --accent: #14b853;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            color: var(--text-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--primary);
+            height: 80px;
+            box-shadow: 0 4px 15px var(--text-color);
+            border-radius: 0 0 12px 12px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .logo img {
+            height: 80px;
+            width: auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            padding: 0 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--bg-color);
+            transition: 0.3s ease;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* header */
+        .header {
+            margin: 20px;
+            margin-top: 140px;
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            padding: 50px;
+        }
+        .foto {
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+        .sambutan {
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            width: 50%;
+            padding: 20px;
+            text-align: justify;
+            padding-top: 80px;
+        }
+        .vm {
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* footer */
+        footer {
+            background-color: var(--primary);
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <img src="assets/logo_osis.png" alt="logo_osis" style="width: 150px;">
-        <a href="index.html">Beranda</a> |
-        <a href="about.html">Tentang</a> |
-        <a href="agenda.html">Agenda</a> |
-        <a href="galeri.html">Galeri</a> |
-        <a href="aspirasi.html">Kotak Aspirasi Siswa</a> |
-        <a href="anggota_baru.html">Pendaftaran Anggota Baru</a> |
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo_osis.png" alt="logo_osis">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="aspirasi.html">Kotak Aspirasi Siswa</a></li>
+        </ul>
     </nav>
 
-    <hr>
+    <div class="header">
+        <h1>Tentang OSIS SMK Harapan Bangsa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam enim quia quos est architecto deleniti dolorem ab commodi nemo provident vero officiis at accusantium, eos voluptate natus vitae nostrum.</p>
+    </div>
+    <section style="display: flex; margin: 20px; gap: 20px;">
+        <div class="foto">
+            <img src="assets/ketua_osis.png" alt="ketua-osis" width="60%">
+        </div>
+        <div class="sambutan">
+            <h2  style="font-weight: 700; font-size: 30px; padding-bottom: 20px; text-align: center;">Sambutan Ketua OSIS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem porro provident iure at labore repudiandae nemo ducimus ipsa doloribus, totam eius laborum laboriosam, non dicta ad vitae, natus aliquid?</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique vero mollitia labore odio ad, atque ea ab natus culpa sunt totam perferendis quam ullam repellat fuga inventore quod quidem eos.</p>
+        </div>
+    </section>
+    
+    <div class="vm">
+        <h2 style="font-weight: 700; font-size: 30px; padding-bottom: 20px; text-align: center;">Visi & Misi</h2>
+        <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Visi</h3>
+        <ol style="padding-left: 20px; margin-bottom: 20px;">
+            <li style="line-height: 1.3; margin-bottom: 8px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+            <li style="line-height: 1.3; margin-bottom: 8px;"> Earum odit accusamus asperiores sequi sunt molestias tempora magnam, itaque fugiat commodi tenetur,</li>
+            <li  style="line-height: 1.3; margin-bottom: 8px;">dignissimos illum totam officiis consectetur consequuntur quisquam, temporibus sed.</li>
+        </ol>
 
-    <h1>Tentang OSIS SMK Harapan Bangsa</h1>
-
-    <img src="assets/ketua_osis.png" alt="ketua-osis" width="250px">
-    <h2>Sambutan Ketua OSIS</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem porro provident iure at labore repudiandae nemo ducimus ipsa doloribus, totam eius laborum laboriosam, non dicta ad vitae, natus aliquid?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique vero mollitia labore odio ad, atque ea ab natus culpa sunt totam perferendis quam ullam repellat fuga inventore quod quidem eos.</p>
-
-    <h2>Visi & Misi</h2>
-    <h3>Visi</h3>
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-        <li> Earum odit accusamus asperiores sequi sunt molestias tempora magnam, itaque fugiat commodi tenetur,</li>
-        <li>dignissimos illum totam officiis consectetur consequuntur quisquam, temporibus sed.</li>
-    </ul>
-
-    <h3>Misi</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perferendis nam quibusdam illo natus nostrum laborum mollitia accusantium voluptatum, molestias doloremque ducimus odio deserunt iure cum non sed delectus placeat.</p>
-
-    <hr>
+        <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 18px;">Misi</h3>
+        <p style="line-height: 1.3; text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perferendis nam quibusdam illo natus nostrum laborum mollitia accusantium voluptatum, molestias doloremque ducimus odio deserunt iure cum non sed delectus placeat.</p>
+    </div>
 
     <footer>
         <p>&copy;2026. By Diandra Fauzi Ramadhani</p>

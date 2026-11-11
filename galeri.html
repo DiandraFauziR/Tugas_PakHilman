@@ -3,38 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri | Portal RESMI OSIS</title>
+    <title>Kotak Aspirasi Siswa | PORTAL RESMI OSIS</title>
+    <style>
+        :root {
+            --bg-color: #F8FAFC;
+            --text-color: #172B3A;
+            --primary: #0B3554;
+            --secondary: #176B9A;
+            --accent: #14b853;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            color: var(--text-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--primary);
+            height: 80px;
+            box-shadow: 0 4px 15px var(--text-color);
+            border-radius: 0 0 12px 12px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .logo img {
+            height: 80px;
+            width: auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            padding: 0 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--bg-color);
+            transition: 0.3s ease;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* header */
+        .header {
+            margin: 20px;
+            margin-top: 140px;
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            padding: 50px;
+        }
+
+        /* card */
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 20px var(--text-color);
+            border-radius: 12px;
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* footer */
+        footer {
+            background-color: var(--primary);
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <img src="assets/logo_osis.png" alt="logo_osis" style="width: 150px;">
-        <a href="index.html">Beranda</a> |
-        <a href="about.html">Tentang</a> |
-        <a href="agenda.html">Agenda</a> |
-        <a href="galeri.html">Galeri</a> |
-        <a href="aspirasi.html">Kotak Aspirasi Siswa</a> |
-        <a href="anggota_baru.html">Pendaftaran Anggota Baru</a> |
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo_osis.png" alt="logo_osis">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="aspirasi.html">Kotak Aspirasi Siswa</a></li>
+        </ul>
     </nav>
     
-    <hr>
+    <div class="header">
+        <h1 style="font-weight: 800; font-size: 40px;">Galeri OSIS SMK HARAPAN BANGSA</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem libero optio aut eveniet maiores consequatur. Ratione earum, commodi at repudiandae illo nam omnis vitae reprehenderit sapiente maiores beatae voluptatum!</p>
+    </div>
     
-    <h1>Galeri OSIS SMK HARAPAN BANGSA</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem libero optio aut eveniet maiores consequatur. Ratione earum, commodi at repudiandae illo nam omnis vitae reprehenderit sapiente maiores beatae voluptatum!</p>
-    
-    <hr>
-    
-    <img src="assets/kegiatan_1.jpg" alt="anjai_gurinjai" style="width: 500px;">
-    <h2>Purna Bakti PKS VANGUARD 26</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis ut repudiandae corrupti, harum voluptas quis nulla placeat doloremque debitis minima suscipit praesentium similique repellendus laborum voluptatibus necessitatibus ducimus aspernatur?</p>
-    
-    <hr>
-    
-    <img src="assets/kegiatan_2.jpg" alt="anjai_gurinjai" style="width: 500px;">
-    <h2>Berbagi takjil bersama PKS VANGUARD 26</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis ut repudiandae corrupti, harum voluptas quis nulla placeat doloremque debitis minima suscipit praesentium similique repellendus laborum voluptatibus necessitatibus ducimus aspernatur?</p>
-    
-    <hr>
-    
+    <section style="display: flex; margin: 20px; gap: 20px;">
+        <div class="card">
+            <img src="assets/kegiatan_1.jpg" alt="anjai_gurinjai" style="width: 80%;">
+            <h2>Purna Bakti PKS VANGUARD 26</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis ut repudiandae corrupti, harum voluptas quis nulla placeat doloremque debitis minima suscipit praesentium similique repellendus laborum voluptatibus necessitatibus ducimus aspernatur?</p>
+        </div>
+        <div class="card">
+            <img src="assets/kegiatan_2.jpg" alt="anjai_gurinjai" style="width: 80%; height: 290px;">
+            <h2>Latihan Dasar Kepemimpinan Siswa 2023</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis ut repudiandae corrupti, harum voluptas quis nulla placeat doloremque debitis minima suscipit praesentium similique repellendus laborum voluptatibus necessitatibus ducimus aspernatur?</p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy;2026. By Diandra Fauzi Ramadhani</p>
     </footer>
